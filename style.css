@@ -1,0 +1,236 @@
+:root {
+    --primary: #369DFF;
+    --secondary: #34FF98;
+    --lightgreen: #36FFFC; 
+    --red: #FF3639;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 200ms;
+    overflow-x: hidden;
+    font-family: 'poppins',sans-serif;
+}
+body {
+    background: #dae4ee;
+}
+button {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #181d1aab;
+    border-radius: 2px;
+}
+ul {
+    width: 150px;
+}
+a {
+    text-decoration: none;
+}
+header {
+    z-index: 999;
+    background: rgb(69, 106, 226);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+}
+.log {
+    display: flex;
+    gap: 15px;
+}
+.login {
+    width: 0;
+}
+.sign-closer-div {
+    background: transparent;
+    z-index: -5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.log a {
+    cursor: pointer;
+}
+.log a:hover {
+    color: orange;
+}
+.signin {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    background: rgba(8, 15, 22, 0.384);
+}
+.form {
+    background: #fefefe;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 5px 5px #181d1aab;
+    
+}
+.form input {
+    font-size: 16px;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+.form button {
+    background: orange;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fefefe;
+    margin: 10px;
+    box-shadow: 0 2px 5px #181d1aab;
+
+}
+.sign-with-other {
+    display: flex;
+}
+.sign-with-other .google {
+    width: 50%;
+    background: linear-gradient(to right, rgb(168, 59, 201), purple);
+}
+.sign-with-other .facebook {
+    background: dodgerblue;
+}
+.sell {
+    padding: 5px 25px;
+    margin: 0 25px;
+    background: #fff;
+    color: blue;
+    cursor: pointer;
+}
+.top {
+    margin-top: 70px;
+    display: flex;
+    /*background: #dc2364;*/
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    width: 33%;
+    padding: 12px 50px 10px 10px;
+    text-align: start;
+    font-size: 18px;
+    background: #ffffffef;
+    color: grey;
+    box-shadow: 0 5px 5px #181d1aab;
+    border: none;
+    outline: none;
+}
+.fa-magnifying-glass {
+    font-size: 20px;
+    background: dodgerblue;
+    box-shadow: 0 5px 10px 2px #181d1aab;
+    cursor: pointer;
+
+    padding: 15px 20px;
+    color: #fff;
+
+}
+main {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    gap: 20px;
+}
+.paid-ads {
+    height: 200px;
+    width: 100%;
+    color: #fefefe;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px #181d1aab;
+
+}
+.post-ads {
+    width: 80%;
+    height: 200px;
+    background: linear-gradient(to right, rgb(168, 112, 6), orange);
+    color: #fefefe;
+    display: grid;
+}
+.fa-plus {
+    font-size: 100px;
+    text-align: center;
+}
+.catagories {
+    grid-row-start: 1;
+    grid-row-end: 30;
+}
+.catagories a {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px 10px;
+    background: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #181d1aab;
+    color: rgb(83, 83, 83);
+
+}
+.catagories a:hover {
+    margin-left: 15px;
+}
+.catagories img {
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 5px;
+}
+.trending * {
+    text-align: start;
+    color: rgb(70, 68, 68);
+}
+.trending {
+    grid-column: 2/4;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 15px;
+    border-top: 2px solid var(--primary);
+    padding-top: 10px;
+    margin-right: 50px;
+
+}
+.item1 {
+    width: 220px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    box-shadow: 0 5px 10px 2px #181d1aab;
+
+}
+.item1 img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.item-info {
+    margin: 5px;
+}
+.price {
+    font-size: 14px;
+    color: orange;
+    
+}
+.posted-time {
+    font-size: 12px;
+    color: rgb(13, 180, 13);
+}
+.region {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+}
