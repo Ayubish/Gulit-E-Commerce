@@ -24,13 +24,14 @@ function createItem() {
     document.querySelector(".items").appendChild(item1);
 }
 
-let logbtn = document.querySelector("showlog");
 let logform = document.querySelector(".signin");
-console.log(logbtn);
+let signform = document.querySelector(".signup")
 function asay() {
     logform.classList.toggle("login");
+    signform.classList.add("login");
+
 }
-let password = document.querySelector(".pass");
-function qedadaw() {
-    password.toggleAttribute("type", "password");
+function demse() {
+    signform.classList.toggle("login");
+    logform.classList.add("login");
 }
