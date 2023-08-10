@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Gulit | Gebeya</title>
+</head>
+<body>
+
+    <header>
+            <h3>Gulit</h3>
+            <div class="log">
+                <a onclick="asay()">Sign in</a>
+                <p>|</p>
+                <a onclick="demse()">Registration</a>
+                <a href="dashboard.html" target="_blank"><button class="sell">Sell</button></a>
+            </div>
+    </header>
+    <!--Authentication Section-->
+
+    <section class="signin login">
+        <div onclick="asay()" class="sign-closer-div"></div>
+        <form class="form">
+        <h2>Log in to your account!</h2>
+        <div>
+        <label for="email" class="label">Email:</label>
+        <input type="email" name="email" class="input" placeholder="Enter your email address" required><br>
+        </div>
+        <div>
+        <label for="pass">Password:</label><br>
+        <input type="password" name="email" placeholder="Enter your password" class="pass" required>
+        </div>
+        <button type="submit">Login</button>
+
+        <p>Sign in with:</p>
+        <div class="sign-with-other">
+            <button class="google">Google</button>
+            <button class="facebook">Facebook</button>
+        </div>
+
+        <p>Don't have account? <span style="cursor: pointer;" onclick="demse()">Register.</span></p>
+
+        </form>
+    </section>
+
+    <section class="signup signin login">
+        <div onclick="demse()" class="sign-closer-div"></div>
+        <form class="form">
+        <h2>Log in to your account!</h2>
+        <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Enter your email address" required><br>
+        </div>
+        <div>
+            <label for="email">Username:</label><br>
+            <input type="email" name="email" placeholder="Username" required><br>
+            </div>
+        <div>
+        <label for="pass">Password:</label><br>
+        <input type="password" name="email" placeholder="Enter your password" class="pass" required>
+        </div>
+        <button type="submit">Login</button>
+
+        <p>Sign in with:</p>
+        <div class="sign-with-other">
+            <button class="google">Google</button>
+            <button class="facebook">Facebook</button>
+        </div>
+
+        <p>Already have account? <span style="cursor: pointer;" onclick="asay()">Sign in.</span></p>
+
+
+        </form>
+    </section>
+
+
+    <div class="top">
+        <img src="src/img/man.png" alt="man smiling">
+        <input type="text" class="search" placeholder="I'm looking for...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </input>
+        <img src="src/img/girls.png" alt="">
+    </div>
+
+
+
+    <main>
+        <section class="catagories">
+            <a href="#" class="vehicles">
+                <img src="src/img/car.jpg" alt="">
+                <p>Vehicles</p>
+            </a>
+            <a href="#" class="property">
+                <img src="src/img/car.jpg" alt="">
+                <p>Property</p>
+            </a>
+            <a href="#" class="phones">
+                <img src="src/img/car.jpg" alt="">
+                <p>Phones & Tablets</p>
+            </a>
+            <a href="#" class="electronics">
+                <img src="src/img/car.jpg" alt="">
+                <p>Electronics</p>
+            </a>
+            <a href="#" class="home">
+                <img src="src/img/car.jpg" alt="">
+                <p>Home and Garden</p>
+            </a>
+            <a href="#" class="beauty">
+                <img src="src/img/car.jpg" alt="">
+                <p>Health and Beauty</p>
+            </a>
+        </section>
+
+
+        <section class="paid-ads">
+            <img src="src/img/ad.jpg" alt="">
+        </section>
+
+
+        <section class="post-ads">
+            <h3>Got something to sell?</h3>
+            <i class="fa-solid fa-plus"></i>
+            <h3>Sell your items here.</h3>
+        </section>
+
+        
+
+        <!--Trending-->
+        <section class="trending">
+            <h1>Trending Posts</h1>
+
+            <div class="items">
+                <a href="#" class="item1">
+                    <img src="src/img/pc4.jpg" alt="">
+                    <div class="item-info">
+                    <h5>Laptop HP 840G</h5>
+                    <p class="price">38,000 ETB</p>
+                    <p class="posted-time">3 hours ago</p>
+                    <p class="region">Addis Ababa</p>
+                    </div>
+                </a>
+                <a href="#" class="item1">
+                    <img src="src/img/pc4.jpg" alt="">
+                    <div class="item-info">
+                    <h5>Laptop HP 840G</h5>
+                    <p class="price">38,000 ETB</p>
+                    <p class="posted-time">3 hours ago</p>
+                    <p class="region">Addis Ababa</p>
+                    </div>
+                </a>
+                <a href="#" class="item1">
+                    <img src="src/img/pc4.jpg" alt="">
+                    <div class="item-info">
+                    <h5>Laptop HP 840G</h5>
+                    <p class="price">38,000 ETB</p>
+                    <p class="posted-time">3 hours ago</p>
+                    <p class="region">Addis Ababa</p>
+                    </div>
+                </a>
+                <a href="#" class="item1">
+                    <img src="src/img/pc4.jpg" alt="">
+                    <div class="item-info">
+                    <h5>Laptop HP 840G</h5>
+                    <p class="price">38,000 ETB</p>
+                    <p class="posted-time">3 hours ago</p>
+                    <p class="region">Addis Ababa</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+    </main>
+
+
+<footer>
+    <div class="footer-elements">
+        <div class="about">
+            <h3>About us</h3>
+            <ul>
+                <li><a href="">About Gulit</a></li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Billing Policy</li>
+                <li>Copyright Infringement Policy</li>
+            </ul>
+        </div>
+        <div class="support">
+            <h3>Support</h3>
+            <ul>
+                <li>support@gulit.com</li>
+                <li>Safety tips</li>
+                <li>Contact Us</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="our-apps">
+            <h3>Our Apps</h3>
+            <button>Get it on Google Play</button>
+            <button>Get it on App Store</button>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+                <li>Telegram</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
